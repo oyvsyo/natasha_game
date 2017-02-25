@@ -16,11 +16,11 @@ function startGame() {
     var myStars = [];
     myGameArea.start();
     myScore = new component("30px", "Consolas", "black", 280, 40, "text");
-    myBackground = new component(656, 270, "../static/img/nata.gif", 0, 0, "image");
-    myGamePiece = new component(40, 43, "../static/img/nata.gif", 10, 120, "image");
-    mySound = new sound("../static/sounds/bang.mp3");
+    myBackground = new component(656, 270, "../natasha_game/static/img/nata.gif", 0, 0, "image");
+    myGamePiece = new component(40, 43, "../natasha_game/static/img/nata.gif", 10, 120, "image");
+    mySound = new sound("../natasha_game/static/sounds/bang.mp3");
     // myMusic = new sound("../static/sounds/gametheme28.mp3");
-    myStarSound = new sound("../static/sounds/star.wav");
+    myStarSound = new sound("../natasha_game/static/sounds/star.wav");
     // myMusic.play();
     score = 0;
 }
@@ -159,7 +159,7 @@ var x, y;
 
         k = Math.floor(Math.random()*8)+1;
         y = Math.floor(Math.random()*(canvasHeight - 40) + 10);
-        myStars.push(new component(50, 50, "../static/img/" + k + ".gif", x + 50, y, "image"));
+        myStars.push(new component(50, 50, "../natasha_game/static/img/" + k + ".gif", x + 50, y, "image"));
         if (myStars.length > 25) {myStars.splice(0,2)};
     }
     for (i = 0; i < myStars.length; i += 1) {
@@ -177,11 +177,11 @@ var x, y;
     myGamePiece.speedY = 0;
         if (myGameArea.keys && (myGameArea.keys[65] || myGameArea.keys[37])) {
             myGamePiece.speedX = -2;
-            myGamePiece.image.src = "../static/img/nataback.gif";
+            myGamePiece.image.src = "../natasha_game/static/img/nataback.gif";
         }
         if (myGameArea.keys && (myGameArea.keys[68] || myGameArea.keys[39])) {
             myGamePiece.speedX = 2;
-            myGamePiece.image.src = "../static/img/nata.gif";
+            myGamePiece.image.src = "../natasha_game/static/img/nata.gif";
         }
         if (myGameArea.keys && (myGameArea.keys[87] || myGameArea.keys[38])) {
             myGamePiece.speedY = -2;
