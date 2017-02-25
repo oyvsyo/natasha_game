@@ -159,7 +159,7 @@ var x, y;
 
         k = Math.floor(Math.random()*8)+1;
         y = Math.floor(Math.random()*(canvasHeight - 40) + 10);
-        myStars.push(new component(50, 50, "/static/img/" + k + ".gif", x + 50, y, "image"));
+        myStars.push(new component(50, 50, "../static/img/" + k + ".gif", x + 50, y, "image"));
         if (myStars.length > 25) {myStars.splice(0,2)};
     }
     for (i = 0; i < myStars.length; i += 1) {
