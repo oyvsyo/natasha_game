@@ -1,0 +1,67 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width; initial-scale=1.0">
+    <title>NatashaGame.exe</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+            crossorigin="anonymous">
+            <link href="/static/css/style.css" rel="stylesheet" />
+            <!-- Latest compiled and minified JavaScript -->
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+                crossorigin="anonymous"></script>
+</head>
+
+<body onload="startGame()">
+    <div class="container">
+        <div class="page-header">
+            <h1>Natasha cinema game <small></small></h1>
+        </div>
+        <div class="row-fluid">
+            <div class="col-lg-4  col-md-4">
+                <p>Use <br>
+                <br>
+                <span class="label label-default">W</span>
+                <span class="label label-default">A</span>
+                <span class="label label-default">D</span>
+                <span class="label label-default">S</span>
+                <br>
+                <br>
+                Or <br>
+                <br>
+                <span class="label label-default">&#8592;</span>
+                <span class="label label-default">&#x2191;</span>
+                <span class="label label-default">&#x2192;</span>
+                <span class="label label-default">&#x2193;</span>
+                <br>
+                <br>
+                To control Natasha.
+                <hr>
+                Pick up famous dirrectors to increase your score and speedup.
+                Do not touch cyan bariers, it's dangerous!!!
+                <br><br>
+                However, you allways can restart the game, so enjoy and have fun ))0))0
+                </p>
+                <p>
+                <button class="btn btn-default" onclick="restart()">Restart</button>
+                </p>
+                
+            </div>
+            <div id="canvas" cllass="col-lg-8">
+            </div>
+            <script src="/static/js/game.js"></script>
+        </div>
+       
+        <div class="footer navbar-fixed-bottom container center">
+            <div class="row-fluid">
+                <p class="myfooter">Contact <a href="https://vk.com/id237063556" >Natasha</a> or checkut her <a href="https://www.instagram.com/natasha_plyontsak/">instagram</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
